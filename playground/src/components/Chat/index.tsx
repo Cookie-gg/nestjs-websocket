@@ -82,8 +82,18 @@ export const Chat: React.FC = () => {
           ))}
         </ul>
         <form onSubmit={sendChat}>
-          <input name="uname" placeholder="username" required />
-          <input name="message" placeholder="message" required />
+          <input
+            autoComplete="off"
+            name="uname"
+            placeholder="username"
+            required
+          />
+          <input
+            autoComplete="off"
+            name="message"
+            placeholder="message"
+            required
+          />
           <button type="submit">
             <svg
               xmlns="http://www.w3.org/2000/svg"
